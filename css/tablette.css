@@ -1,0 +1,84 @@
+@media screen and (min-width: 769px) {
+  .header-container {
+    background-color: #ffffff;
+    box-shadow: 0px 5px 5px 0px #cfcfcf;
+    position: relative;
+    z-index: 2;
+  }
+  .header-container div.center {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-container div.center div.logo-container {
+    box-shadow: none;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 0 0 25px;
+  }
+  .header-container div.center div.header-location {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 25px 0 0;
+  }
+  .header-container div.center div.header-location p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  .header-container div.center div.header-location p i {
+    position: unset;
+    padding: 0 5px 0 0;
+  }
+  .header-explorer {
+    position: relative;
+    z-index: 1;
+  }
+  div.fonctionnement-list ol {
+    display: flex;
+    flex-direction: column;
+  }
+  div.fonctionnement-list ol li {
+    width: 40%;
+  }
+  div.fonctionnement-list ol li:nth-child(1) {
+    margin-left: 12px;
+  }
+  div.fonctionnement-list ol li:nth-child(2) {
+    margin: 0 auto 25px auto;
+  }
+  div.fonctionnement-list ol li:nth-child(3) {
+    margin: 0 0 25px auto;
+  }
+  section.restaurants > div > h3 {
+    text-align: center;
+  }
+  div.restaurants-div > a > article > figure {
+    display: flex;
+    flex-direction: row;
+  }
+  div.restaurants-div > a > article > figure img {
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 10px 10px 10px #e6e6e6;
+  }
+  div.restaurants-div > a > article > figure figcaption {
+    width: 60%;
+  }
+  div.restaurants-div > a > article > figure figcaption div:first-child {
+    height: 100%;
+    width: 100%;
+    margin: 20px 20px 20px 20px;
+  }
+  div.restaurants-div > a > article > figure figcaption div h4 {
+    margin-bottom: 15%;
+  }
+  div.footer-limit {
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+
+/*# sourceMappingURL=tablette.css.map */

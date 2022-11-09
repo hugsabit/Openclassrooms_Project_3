@@ -1,0 +1,369 @@
+.shadow-box {
+  box-shadow: 0px 5px 5px 0px #cfcfcf;
+}
+
+.no-style {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+}
+
+.main-grey-bg-restaurant {
+  background-color: #f6f6f6;
+}
+
+.btn {
+  height: 50px;
+  width: 218px;
+  margin-top: 32px;
+  border: 0;
+  border-radius: 55px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(#FF79DA, #9356DC);
+  box-shadow: 0 10px 10px #cacaca;
+  cursor: pointer;
+}
+
+.heart-container {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.heart-container i {
+  position: absolute;
+  font-size: 1.5rem;
+  transition: opacity 0.2s ease-in-out;
+}
+.heart-container .full {
+  opacity: 0;
+  background: linear-gradient(180deg, rgb(147, 86, 220) 0%, rgb(255, 121, 218) 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.heart-container:hover .full {
+  opacity: 1;
+}
+.heart-container:hover .fa.fa-heart-o {
+  opacity: 0;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+}
+
+div.logo-container {
+  width: 100%;
+  height: 63px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+div.logo-container img {
+  height: 30px;
+  width: auto;
+}
+div.logo-container a {
+  position: absolute;
+  left: 24px;
+  top: 23px;
+}
+
+div.header-location {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #353535;
+  background-color: #eaeaea;
+}
+div.header-location p {
+  position: relative;
+}
+div.header-location p i.fa-solid.fa-location-dot {
+  position: absolute;
+  left: -20px;
+}
+
+.header-explorer {
+  background-color: #f6f6f6;
+}
+.header-explorer div.center {
+  height: 287px;
+  padding: 43px 30px 43px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-explorer div.center h2 {
+  margin-top: 0;
+}
+.header-explorer div.center h2,
+.header-explorer div.center p {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.main {
+  height: auto;
+  width: auto;
+}
+.main section.fonctionnement {
+  height: 400px;
+  margin: 0 20px 0 20px;
+}
+.main section.fonctionnement div > h3 {
+  margin: 40px 0 20px;
+}
+.main img {
+  height: 260px;
+  width: 100%;
+  object-fit: cover;
+}
+
+div.fonctionnement-list {
+  width: 100%;
+  height: auto;
+}
+div.fonctionnement-list ol > li {
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 25px 12px;
+  padding-left: 70px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #f6f6f6;
+}
+div.fonctionnement-list ol > li:hover {
+  background-color: #f5edff;
+}
+div.fonctionnement-list ol > li:hover p > i {
+  color: #9356dc;
+}
+div.fonctionnement-list ol > li span {
+  position: absolute;
+  left: -12px;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-color: #9356dc;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.fonctionnement-list ol > li p > i {
+  position: absolute;
+  left: 35px;
+  color: #7e7e7e;
+}
+
+section.restaurants {
+  background-color: #f6f6f6;
+  padding: 0 20px 0 20px;
+}
+section.restaurants div > h3 {
+  padding: 40px 0 10px 0;
+  font-size: 20px;
+  margin: 0;
+}
+
+div.restaurants-div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 0 46px 0;
+}
+div.restaurants-div a,
+div.restaurants-div a > article,
+div.restaurants-div a > article > figure {
+  padding: 0;
+  margin: 0;
+  height: 250px;
+  width: 100%;
+}
+div.restaurants-div a {
+  background-color: #ffffff;
+  border-radius: 20px;
+  margin: 18px 0;
+  box-shadow: 0 10px 10px #e6e6e6;
+}
+div.restaurants-div a article > figure > img {
+  width: 100%;
+  height: 174px;
+  border-radius: 20px 20px 0 0;
+  object-fit: cover;
+}
+div.restaurants-div a article > figure > figcaption {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 14px 15px 14px;
+}
+div.restaurants-div a article > figure > figcaption div > h4,
+div.restaurants-div a article > figure > figcaption div > p {
+  margin: 0;
+}
+div.restaurants-div a:nth-child(1) {
+  animation: slide 2s 0s ease-in-out forwards;
+}
+div.restaurants-div a:nth-child(2) {
+  animation: slide 2s 0.2s ease-in-out forwards;
+}
+div.restaurants-div a:nth-child(3) {
+  animation: slide 2s 0.4s ease-in-out forwards;
+}
+div.restaurants-div a:nth-child(4) {
+  animation: slide 2s 0.6s ease-in-out forwards;
+}
+
+div.menu {
+  position: relative;
+  top: -38px;
+  padding: 20px 14px 20px 14px;
+  border-radius: 40px 40px 0 0;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+div.menu div.title {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+div.menu div.title h1 {
+  margin: 15px 0 15px 0;
+}
+
+section.plats {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+section.plats h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+section.plats ul > li {
+  margin: 14px 0 14px 0;
+  height: 68px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px 20px 20px 20px;
+  opacity: 0;
+  overflow: hidden;
+}
+section.plats ul > li:nth-child(1) {
+  animation: slide 2s 0s ease-in-out forwards;
+}
+section.plats ul > li:nth-child(2) {
+  animation: slide 2s 0.2s ease-in-out forwards;
+}
+section.plats ul > li:nth-child(3) {
+  animation: slide 2s 0.4s ease-in-out forwards;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+section.plats ul > li:hover .fa.fa-check-circle {
+  width: 68px;
+  opacity: 1;
+}
+section.plats ul > li a,
+section.plats ul > li a > article {
+  height: 68px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section.plats ul > li a > article {
+  padding: 15px 20px 15px 10px;
+  min-width: 100px;
+}
+section.plats ul > li a > article > div {
+  width: 100%;
+}
+section.plats ul > li a > article > div h3 {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+section.plats ul > li a > article > div div {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+section.plats ul > li a > article > div div p {
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  min-width: 27px;
+}
+section.plats ul > li a > i.fa.fa-check-circle {
+  width: 0;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #99e2d0;
+  color: #ffffff;
+  border-radius: 0 20px 20px 0;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: width;
+}
+
+footer.footer {
+  height: 197px;
+  background-color: #353535;
+  color: #ffffff;
+}
+footer.footer div.footer-limit {
+  padding: 25px 25px 0px 25px;
+}
+footer.footer div.footer-limit img {
+  height: 18px;
+  width: auto;
+  margin: 26px 0 10px 0;
+  filter: brightness(0) invert(1);
+}
+
+ul.footer-list {
+  padding: 0;
+}
+ul.footer-list li > a {
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=style.css.map */
