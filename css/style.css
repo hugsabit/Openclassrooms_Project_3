@@ -295,7 +295,12 @@ section.plats ul > li:nth-child(3) {
 }
 section.plats ul > li:hover .fa.fa-check-circle {
   width: 68px;
-  opacity: 1;
+}
+section.plats ul > li:hover div.icon-plats {
+  width: 68px;
+}
+section.plats ul > li:hover div.icon-plats > i.fa.fa-check-circle {
+  transform: rotateZ(360deg);
 }
 section.plats ul > li a,
 section.plats ul > li a > article {
@@ -330,7 +335,7 @@ section.plats ul > li a > article > div div p {
   overflow: hidden;
   min-width: 27px;
 }
-section.plats ul > li a > i.fa.fa-check-circle {
+section.plats ul > li a > div.icon-plats {
   width: 0;
   height: 68px;
   display: flex;
@@ -339,9 +344,14 @@ section.plats ul > li a > i.fa.fa-check-circle {
   background-color: #99e2d0;
   color: #ffffff;
   border-radius: 0 20px 20px 0;
-  opacity: 0;
+  overflow: hidden;
   transition-duration: 1s;
   transition-property: width;
+}
+section.plats ul > li a > div.icon-plats i.fa.fa-check-circle {
+  height: 16px;
+  width: 16px;
+  transition: transform 0.5s ease-in-out;
 }
 
 footer.footer {
@@ -351,19 +361,33 @@ footer.footer {
 }
 footer.footer div.footer-limit {
   padding: 25px 25px 0px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 footer.footer div.footer-limit img {
   height: 18px;
-  width: auto;
+  width: 105px;
   margin: 26px 0 10px 0;
   filter: brightness(0) invert(1);
 }
 
 ul.footer-list {
   padding: 0;
+  width: 200px;
 }
-ul.footer-list li > a {
+ul.footer-list li {
+  margin: 5px 0;
+}
+ul.footer-list li a {
   color: #ffffff;
+}
+ul.footer-list li a span {
+  display: inline-flex;
+  height: 19px;
+  width: 19px;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
